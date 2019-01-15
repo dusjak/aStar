@@ -32,7 +32,7 @@ closed_update = []
 # The map file
 # maps are found in directory maps. Change last number from 1-4 for choosing map 1, 2, 3 or 4
 # e.g maps/board-1-"1".txt for map 1
-filepath = 'maps/board-1-1.txt'
+filepath = 'boards/board-1-1.txt'
 
 
 # ###################################### GUI ######################################

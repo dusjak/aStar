@@ -38,7 +38,7 @@ path = []
 # The map file
 # maps are found in directory maps. Change last number from 1-4 for choosing map 1, 2, 3 or 4
 # e.g maps/board-2-"1".txt for map 1
-filepath = 'maps/board-2-1.txt'
+filepath = 'boards/board-2-1.txt'
 
 
 # ###################################### GUI ######################################
