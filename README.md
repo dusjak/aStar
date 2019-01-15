@@ -36,7 +36,7 @@ Comment out parts of code to change the search algortihm. Explained in the code.
 
 Boards
 ```
-Change "filepath" to test other boards attached in the "bards" directory.
+Change "filepath" to test other boards attached in the "boards" directory.
 ```
 
 ## Screens
