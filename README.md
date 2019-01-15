@@ -59,4 +59,4 @@ Change "filepath" to test other boards attached in the "bards" directory.
 
 ## Authors
 
-* **Dusan Jakovic** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Dusan Jakovic**
