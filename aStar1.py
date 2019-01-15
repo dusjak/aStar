@@ -32,7 +32,7 @@ closed_update = []
 # The map file
 # maps are found in directory maps. Change last number from 1-4 for choosing map 1, 2, 3 or 4
 # e.g maps/board-1-"1".txt for map 1
-filepath = 'boards/board-1-1.txt'
+filepath = 'boards/1/board-1-1.txt'
 
 
 # ###################################### GUI ######################################
@@ -250,9 +250,9 @@ def draw_path(final_path):
 
 # A* algorithm that finds the shortest path. It includes the update_board method
 # which updates the board as long as the algorithm runs
-def aStar():
+def aStar(refresh_time):
     while openSet:
-        update_board(0)
+        update_board(refresh_time)
         # A*
         current = min(openSet, key=lambda o: o.f)
         # BFSDEee
@@ -293,7 +293,7 @@ def aStar():
 def run():
     draw_board()
     create_neighbors()
-    aStar()
+    aStar(refresh_time=0)
     draw_path(path)
     win.getMouse()
 

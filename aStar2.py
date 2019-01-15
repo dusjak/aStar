@@ -38,7 +38,7 @@ path = []
 # The map file
 # maps are found in directory maps. Change last number from 1-4 for choosing map 1, 2, 3 or 4
 # e.g maps/board-2-"1".txt for map 1
-filepath = 'boards/board-2-1.txt'
+filepath = 'boards/2/board-2-1.txt'
 
 
 # ###################################### GUI ######################################
@@ -272,7 +272,7 @@ def update_board(second_per_update):
             # text.setStyle("bold")
             # text.draw(win)
         dot = Circle(Point(current.j * square_size + square_size / 2, current.i * square_size + square_size / 2), 10)
-        dot.setOutline(color_rgb(66, 134, 244))
+        dot.setOutline(color_rgb(206, 141, 14))
         dot.setWidth(3)
         dot.draw(win)
     for i in closeSet:
@@ -295,18 +295,18 @@ def draw_path(final_path):
     for i in final_path:
         dot = Circle(Point((i.j * square_size) + square_size / 2,
                            (i.i * square_size) + square_size / 2), 10)
-        dot.setFill(color_rgb(66, 134, 244))
+        dot.setFill(color_rgb(206, 141, 14))
         dot.setOutline(color="white")
         dot.setWidth(3)
         dot.draw(win)
 
 
-def aStar(animate):
+def aStar(animate, refresh_time):
     while openSet:
         # Set animate to: True (view animation) or False(skip animation)
         if animate:
             win.update()
-        update_board(0)
+        update_board(refresh_time)
         # A* STAR
         current = min(openSet, key=lambda o: o.f)
         # BFS
@@ -354,6 +354,6 @@ def aStar(animate):
 if __name__ == '__main__':
     draw_board()
     create_neighbors()
-    aStar(animate=True)
+    aStar(animate=True, refresh_time=0)
     draw_path(path)
     win.getMouse()
