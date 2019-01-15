@@ -44,7 +44,7 @@ Change "filepath" to test other boards attaqched in the "bards" directory.
 aStar2.py
 
 ```
-![Alt text](/dusjak/aStar/blob/master/screens/Capture1.PNG?raw=true "Start")
+![](screens/Capture1.PNG)
 ```
 
 
