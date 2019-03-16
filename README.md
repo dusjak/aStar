@@ -15,7 +15,7 @@ Python
 Install Python (v.3)
 ```
 
-Library
+External Library
 
 ```
 graphics.py (by John Zelle)
