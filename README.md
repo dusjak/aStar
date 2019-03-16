@@ -18,7 +18,7 @@ Install Python (v.3)
 Library
 
 ```
-Install "graphics.py", written by John Zelle
+graphics.py (by John Zelle)
 ```
 
 ## Run
